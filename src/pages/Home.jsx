@@ -122,7 +122,7 @@ export default function Home() {
                 <span className="text-[11px] font-semibold tracking-widest text-text">PREMIUM QUALITY</span>
               </div>
 
-              <h1 className="text-6xl md:text-[6.5rem] text-wine-red font-semibold leading-[1.05] tracking-tight mb-8">
+              <h1 className="text-6xl md:text-[6.5rem] text-wine-red font-semibold leading-[1.05] tracking-tight mb-8 hero-title">
                 Elevate Your<br />Game
               </h1>
               
