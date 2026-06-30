@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-wine-dark text-white pt-20 pb-8 border-t border-wine-red">
       <div className="max-w-7xl mx-auto px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-16">
           
           {/* Brand & Social */}
           <div className="lg:col-span-2">
@@ -51,6 +51,19 @@ export default function Footer() {
               <li><Link to="/shipping" className="hover:text-white transition-colors">Shipping</Link></li>
               <li><Link to="/returns" className="hover:text-white transition-colors">Returns</Link></li>
               <li><Link to="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
+            </ul>
+          </div>
+
+          {/* Sports Turfs */}
+          <div>
+            <h4 className="font-semibold text-sm tracking-widest uppercase mb-6">Sports Turfs</h4>
+            <ul className="flex flex-col gap-4 text-sm text-white/70">
+              <li><Link to="/turf#football" className="hover:text-white transition-colors">Football</Link></li>
+              <li><Link to="/turf#cricket" className="hover:text-white transition-colors">Cricket</Link></li>
+              <li><Link to="/turf#badminton" className="hover:text-white transition-colors">Badminton</Link></li>
+              <li><Link to="/turf#basketball" className="hover:text-white transition-colors">Basketball</Link></li>
+              <li><Link to="/turf#membership" className="hover:text-white transition-colors">Membership</Link></li>
+              <li><Link to="/turf#tournaments" className="hover:text-white transition-colors">Tournament Booking</Link></li>
             </ul>
           </div>
 

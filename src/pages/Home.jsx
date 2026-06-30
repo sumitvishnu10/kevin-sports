@@ -12,6 +12,7 @@ import PromoBanner from "../components/PromoBanner";
 import Statistics from "../components/Statistics";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
+import TurfPromo from "../components/TurfPromo";
 import heroImg from "../assets/transparent_shoe.png";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -202,6 +203,7 @@ export default function Home() {
 
       <Collections />
       <FeaturedProducts />
+      <TurfPromo />
       <PromoBanner />
       <Statistics />
       <Newsletter />

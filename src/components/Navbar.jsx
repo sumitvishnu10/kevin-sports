@@ -16,7 +16,14 @@ export default function Navbar() {
         </Link>
 
         <div className="flex gap-10 text-sm font-medium text-text">
-          {['/', '/collections', '/products', '/about', '/contact'].map((path) => (
+          {[
+            { path: '/', label: 'Home' },
+            { path: '/collections', label: 'Collections' },
+            { path: '/products', label: 'Products' },
+            { path: '/turf', label: 'Turf Booking' },
+            { path: '/about', label: 'About' },
+            { path: '/contact', label: 'Contact' }
+          ].map(({ path, label }) => (
             <Link
               key={path}
               to={path}
@@ -24,7 +31,7 @@ export default function Navbar() {
                 isActive(path) ? 'text-wine-red after:content-[""] after:absolute after:bottom-[-26px] after:left-0 after:w-full after:h-0.5 after:bg-wine-red' : ''
               }`}
             >
-              {path === '/' ? 'Home' : path.slice(1).charAt(0).toUpperCase() + path.slice(2)}
+              {label}
             </Link>
           ))}
         </div>
@@ -42,6 +49,9 @@ export default function Navbar() {
               3
             </span>
           </button>
+          <Link to="/turf" className="bg-wine-red hover:bg-wine-dark text-white px-6 py-2.5 rounded-full text-sm font-medium transition-all shadow-md hover:shadow-lg ml-2">
+            Book Turf
+          </Link>
         </div>
       </div>
     </nav>

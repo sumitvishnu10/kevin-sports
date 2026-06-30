@@ -6,6 +6,7 @@ import Collections from "../pages/Collections";
 import Products from "../pages/Products";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
+import Turf from "../pages/Turf";
 
 export default function AppRoutes() {
   const location = useLocation();
@@ -16,7 +17,8 @@ export default function AppRoutes() {
       "/collections": "Collections | Kevin Sports",
       "/products": "Products | Kevin Sports",
       "/about": "About | Kevin Sports",
-      "/contact": "Contact | Kevin Sports"
+      "/contact": "Contact | Kevin Sports",
+      "/turf": "Turf Booking | Kevin Sports"
     };
     
     // Set exact page title
@@ -30,6 +32,7 @@ export default function AppRoutes() {
       <Route path="/products" element={<Products />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
+      <Route path="/turf" element={<Turf />} />
       
       {/* Catch-all for unmatched routes linking to products */}
       <Route path="*" element={<Products />} />
