@@ -10,7 +10,7 @@ export default function Footer() {
           
           {/* Brand & Social */}
           <div className="lg:col-span-2">
-            <Link to="/" className="text-4xl text-white font-['Great_Vibes'] mb-6 inline-block">
+            <Link to="/" className="text-3xl text-white font-bold tracking-tight mb-6 inline-block">
               Kevin Sports
             </Link>
             <p className="text-white/70 text-sm mb-8 max-w-sm leading-relaxed">

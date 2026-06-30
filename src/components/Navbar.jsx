@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
         <Link
           to="/"
-          className="text-4xl text-wine-red font-['Great_Vibes']"
+          className="text-3xl text-wine-red font-bold tracking-tight"
         >
           Kevin Sports
         </Link>
