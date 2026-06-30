@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-wine-red: #7B001C;
+  --color-wine-dark: #560014;
+  --color-cream: #F7F4F0;
+  --color-cream-dark: #ECE7E2;
+  --color-text: #1A1A1A;
+  --color-gray: #666666;
+  --color-white: #FFFFFF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-cream);
+  color: var(--color-text);
+  font-family: "Inter", sans-serif;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* The image is dark/black. We screen it with wine-red to turn the black into wine-red */
+  background-color: var(--color-wine-red);
+  background-image: url('./assets/luxury_pattern.png');
+  background-repeat: repeat;
+  background-size: 600px;
+  background-blend-mode: screen;
+  
+  /* Then multiply that wine-red result against the cream body */
+  mix-blend-mode: multiply;
+  
+  /* Make it extremely visible as requested */
+  opacity: 0.75; 
+  
+  pointer-events: none;
+  z-index: 0;
+}
+
+h1,
+h2 {
+  font-family: "Great Vibes", "Italianno", cursive;
+  font-weight: 400;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.blend-shoe {
+  mix-blend-mode: color-burn;
+}
